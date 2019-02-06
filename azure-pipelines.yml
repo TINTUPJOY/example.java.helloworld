@@ -17,7 +17,6 @@ steps:
     javac HelloWorld.java
     jar cfm HelloWorld.jar Manifest.txt HelloWorld.class
     java -jar HelloWorld.jar
-    pwd
     docker build -t helloworld .
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
