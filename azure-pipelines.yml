@@ -17,7 +17,7 @@ steps:
     javac HelloWorld.java
     jar cfm HelloWorld.jar Manifest.txt HelloWorld.class
     java -jar HelloWorld.jar
-    docker build -f /TINTUPJOY/example.java.helloworld/Dockerfile
+    docker build -t helloworld .
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
