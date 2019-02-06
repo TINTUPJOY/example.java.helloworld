@@ -18,7 +18,7 @@ steps:
     jar cfm HelloWorld.jar Manifest.txt HelloWorld.class
     java -jar HelloWorld.jar
     docker build -t helloworld .
-    dokcer images
+    docker images
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
