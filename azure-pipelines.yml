@@ -14,7 +14,7 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    jar cfm HelloWorld.jar manifest.txt HelloWorld.class.
+    jar cfm HelloWorld.jar Manifest.txt HelloWorld.class.
     java -jar HelloWorld.jar.
     cd example.java.helloworld
     docker build -t helloworld
