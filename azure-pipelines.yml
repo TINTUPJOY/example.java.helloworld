@@ -14,6 +14,7 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
+    javac HelloWorld.java.
     jar cfm HelloWorld.jar Manifest.txt HelloWorld.class.
     java -jar HelloWorld.jar.
     cd example.java.helloworld
