@@ -19,7 +19,7 @@ steps:
     java -jar HelloWorld.jar
     docker build -t helloworld .
     docker images
-    docker login registrytestnew.azurecr.io -u 'Registrytestnew' -p $(pass)
+    docker login registrytestnew.azurecr.io -u 'Registrytestnew' -p p$(pass)
     docker tag helloworld registrytestnew.azurecr.io/helloworld:latest101
     docker push registrytestnew.azurecr.io/helloworld:latest101
   displayName: 'Run a multi-line script'
