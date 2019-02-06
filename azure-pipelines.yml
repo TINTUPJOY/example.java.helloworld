@@ -19,6 +19,7 @@ steps:
     java -jar HelloWorld.jar
     docker build -t helloworld .
     docker images
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    docker login -u 'Registrytestnew' -p 'vi5=32neB63L7wXeFVLZpREaR6lwHk4A'
+    docker tag registrytestnew.azurecr.io/helloworld:latest101
+    docker push registrytestnew.azurecr.io/helloworld:latest101
   displayName: 'Run a multi-line script'
