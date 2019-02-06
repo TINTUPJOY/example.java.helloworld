@@ -14,6 +14,10 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
+    jar cfm HelloWorld.jar manifest.txt HelloWorld.class.
+    java -jar HelloWorld.jar.
+    cd example.java.helloworld
+    docker build -t helloworld
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
